@@ -14,10 +14,19 @@ NOTES: Check Null Strings ,Include stddef for NULL if needed.Create a New string
 original String
 */
 
-#include <stddef.h>
+
 #include <stdlib.h>
-
-char * get_sub_string(char *str, int i, int j){
-
-    return NULL;
+char* get_sub_string(char *str, int i, int j)
+{
+	if (str == NULL ||i>j)
+		return NULL;
+	char *a = new char[100];
+	int k = 0;
+	for (int x = i; x <= j; x++)
+	{
+		a[k] = str[x];
+		k++;
+	}
+	a[k] = '\0';
+	return a;
 }
