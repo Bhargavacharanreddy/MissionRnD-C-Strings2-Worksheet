@@ -18,8 +18,8 @@ int main(){
 
 	//Test Consonants_Vowels
 	char *a;
-	char b[] = "abcdefgh.,812639";
-	a = get_sub_string(b, 0, 2);
+	char b[] = " charan abcdefgh";
+	a = get_last_word(b);
 	printf("%s", a);
 	getchar();
 	//Test getFrequencyofWord
